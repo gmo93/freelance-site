@@ -62,17 +62,22 @@ export default function Keyboard() {
         setActive(false);
         // document.getElementById('')
       }
-      console.log(letter)
+      console.log(`Letter: ${letter}`)
+      console.log(`Prev Letter: ${prevLetter}`)
       if (testerString[count] === ' ') {
         setLetter('space');
+      if (testerString[count - 1] === ' ') {
+        setPrevLetter('space');
+      }
       } else {
         setLetter(testerString[count]);
         setPrevLetter(testerString[count - 1]);
         if (letter && letter !== 'space') {
-          document.getElementById(letter).style.fill = '#cfa910';
+          document.getElementById(letter.toLowerCase()).style.fill = '#cfa910';
         }
-        if (prevLetter === "space") {
-            document.getElementById('space').style.fill = '#fcca15';
+        if (prevLetter) {
+            document.getElementById(prevLetter).style.fill = '#fcca15';
+            document.getElementById('w').style.fill = '#fcca15';
         }
       }
       // console.log(testerString[count])
