@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Keyboard() {
-  const testerArray = ['h', 'e', 'r', 'e', ' ', 'w', 'e', ' ', 'g', 'o', '!'];
   const testerString = 'Where can I possibly find a web designer??';
+  const testStringCount = ' Where can I possibly find a web designer??';
   const filledArr: any = [];
 
   const [quote, setQuote] = useState('');
@@ -55,33 +55,34 @@ export default function Keyboard() {
 
   useEffect(() => {
     // console.log(testerString[count]);
-
     const intervalId = setInterval(() => {
       setCount(count + 1);
+      //Runs interval until string is completed
       if (count > testerString.length - 1) {
         setActive(false);
-        // document.getElementById('')
       }
-      console.log(`Letter: ${letter}`)
-      console.log(`Prev Letter: ${prevLetter}`)
+      console.log(`Letter: ${letter}`);
+      console.log(`Prev Letter: ${prevLetter}`);
+
+      // Sets letter for either "space" or current string position
       if (testerString[count] === ' ') {
         setLetter('space');
-      if (testerString[count - 1] === ' ') {
-        setPrevLetter('space');
-      }
       } else {
-        setLetter(testerString[count]);
-        setPrevLetter(testerString[count - 1]);
-        if (letter && letter !== 'space') {
-          document.getElementById(letter.toLowerCase()).style.fill = '#cfa910';
-        }
-        if (prevLetter) {
-            document.getElementById(prevLetter).style.fill = '#fcca15';
-            document.getElementById('w').style.fill = '#fcca15';
+        setLetter(testStringCount[count].toLowerCase());
+      }
+      // Sets previous letter for either "space" or current string position
+      if (prevLetter || count) {
+        if (testerString[count - 1] === ' ') {
+          setPrevLetter('space');
+        } else {
+          setPrevLetter(testerString[count - 1].toLowerCase());
+          document.getElementById(letter).style.fill = '#cfa910';
+          document.getElementById(prevLetter).style.fill = '#fcca15';
+          document.getElementById('w').style.fill = '#fcca15';
         }
       }
-      // console.log(testerString[count])
-      setQuote((prev) => prev + testerString[count]);
+      setQuote((prev) => prev + testerString[count - 1]);
+      // setQuote((prev) => prev + testerString[count - 1]);
     }, 100);
 
     if (count > testerString.length - 1) {
@@ -96,7 +97,7 @@ export default function Keyboard() {
     <div>
       <div className="flex flex-wrap h-full w-screen justify-center items-start">
         <h1 className="mt-28 text-2xl">Omohundro Web Design</h1>
-        <div className="w-5/6 h-1/6 bg-white border-2">{quote}</div>
+        <div className="w-5/6 h-1/6 bg-white border-2 text-black">{quote}</div>
         <svg
           onClick={keyPress}
           style={keyboard}
@@ -653,7 +654,7 @@ export default function Keyboard() {
               onMouseEnter={mouseHover}
               onMouseLeave={mouseLeave}
               style={cls3}
-              id=""
+              id="?"
               x="711.92"
               y="201.61"
               width="52.54"
