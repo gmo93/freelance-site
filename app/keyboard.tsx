@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export default function Keyboard() {
   const testerString = 'Where can I possibly find a web designer??';
@@ -42,66 +43,56 @@ export default function Keyboard() {
     marginTop: '20vh',
   };
 
-  const keyPress = (e: any) => {
-    console.log(e.target);
-  };
+  const helloLog = () => {
+    console.log('hello')
+  }
 
-  const mouseHover = (e: any) => {
-    e.target.style.fill = '#cfa910';
-  };
-  const mouseLeave = (e: any) => {
-    e.target.style.fill = '#facc15';
-  };
-
-  // useEffect(() => {
-  //   // console.log(testerString[count]);
-  //   const intervalId = setInterval(() => {
-  //     setCount(count + 1);
-  //     //Runs interval until string is completed
-  //     if (count > testerString.length - 1) {
-  //       setActive(false);
-  //     }
-  //     console.log(`Letter: ${letter}`);
-  //     console.log(`Prev Letter: ${prevLetter}`);
-
-  //     // Sets letter for either "space" or current string position
-  //     if (testerString[count] === ' ') {
-  //       setLetter('space');
-  //     } else {
-  //       setLetter(testStringCount[count].toLowerCase());
-  //     }
-  //     // Sets previous letter for either "space" or current string position
-  //     if (prevLetter || count) {
-  //       if (testerString[count - 1] === ' ') {
-  //         setPrevLetter('space');
-  //       } else {
-  //         setPrevLetter(testerString[count - 1].toLowerCase());
-  //         document.getElementById(letter).style.fill = '#cfa910';
-  //         document.getElementById(prevLetter).style.fill = '#fcca15';
-  //         document.getElementById('w').style.fill = '#fcca15';
-  //       }
-  //     }
-  //     setQuote((prev) => prev + testerString[count - 1]);
-  //     // setQuote((prev) => prev + testerString[count - 1]);
-  //   }, 100);
-
-  //   if (count > testerString.length - 1) {
-  //     clearInterval(intervalId);
-  //   }
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // });
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
 
   return (
-    <div className="bg-black">
-      <div className="flex flex-wrap h-full bg-dots bg-center bg-cover w-screen justify-center items-start">
+    <div className={`bg-black w-screen`}>
+      <div className="flex flex-wrap h-full w-full bg-dots bg-no-repeat bg-center bg-cover md:bg-contain justify-center items-start">
         <div className="flex flex-wrap h-full w-full items-center justify-center">
-            <h1 className="text-4xl text-center text-black font-bold">Omohundro Web Design</h1>
+          <h1 className="text-4xl text-center text-black font-bold">
+            Omohundro Web Design
+          </h1>
         </div>
       </div>
-      <div className="flex bg-black h-full w-screen justify-center">
-        <p className={"text-white"}>Alright, lets get started!</p>
+      <div className="flex flex-wrap h-3/4 w-full text-3xl md:text-5xl justify-center items-center">
+        <p
+          ref={ref}
+          id="needWebsite"
+          className={`w-4/5 text-white font-bold 
+          transition-transform duration-600 ${
+            inView ? 'translate-x-0' : 'translate-x-12'
+          }
+          transition-opacity duration-600 ${
+            inView ? 'opacity-1' : 'opacity-0'
+          }`}
+        >
+          So, you&#39;re in need of a website?
+        </p>
+        <p id="rightPlace" className={`w-4/5 text-omo-yellow text-end font-bold ease-in-out
+        transition-transform duration-600 ${
+            inView ? 'translate-x-0' : '-translate-x-6'
+          }
+          transition-opacity duration-600 ${
+            inView ? 'opacity-1' : 'opacity-0'
+          }`}>
+          Well, you have come to the right place! Whether it be designing,
+          building a website from scratch, or even updating an existing one, we
+          can help you out.
+        </p>
+        {/* <p className="w-3/5 text-white text-3xl font-bold">
+          We know there are many different ways to build a website today, such
+          as Shopify, Wordpress, Wix, Squarespace, you name it! No matter the
+          builder, or lack there of, we can help you out! Fill out our form
+          below to let us know what you are looking for, and we will get back to
+          you as soon as possible!
+        </p> */}
       </div>
     </div>
   );
