@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { InView } from 'react-intersection-observer';
 
 export default function Keyboard() {
   const testerString = 'Where can I possibly find a web designer??';
@@ -44,13 +44,8 @@ export default function Keyboard() {
   };
 
   const helloLog = () => {
-    console.log('hello')
-  }
-
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    rootMargin: '-100px 0px',
-  });
+    console.log('hello');
+  };
 
   return (
     <div className={`bg-black w-screen`}>
@@ -62,30 +57,42 @@ export default function Keyboard() {
         </div>
       </div>
       <div className="flex flex-wrap h-3/4 w-full text-3xl md:text-5xl justify-center items-center">
-        <p
-          ref={ref}
-          id="needWebsite"
-          className={`w-4/5 text-white font-bold 
+        <InView>
+          {({ inView, ref, entry }) => (
+            <p
+              ref={ref}
+              id="needWebsite"
+              className={`w-4/5 text-white font-bold 
           transition-transform duration-600 ${
             inView ? 'translate-x-0' : 'translate-x-12'
           }
           transition-opacity duration-600 ${
             inView ? 'opacity-1' : 'opacity-0'
           }`}
-        >
-          So, you&#39;re in need of a website?
-        </p>
-        <p id="rightPlace" className={`w-4/5 text-omo-yellow text-end font-bold ease-in-out
+            >
+              So, you&#39;re in need of a website?
+            </p>
+          )}
+        </InView>
+        <InView>
+          {({ inView, ref, entry }) => (
+            <p
+              ref={ref}
+              id="rightPlace"
+              className={`w-4/5 text-omo-yellow text-end font-bold ease-in-out
         transition-transform duration-600 ${
-            inView ? 'translate-x-0' : '-translate-x-6'
-          }
+          inView ? 'translate-x-0' : '-translate-x-6'
+        }
           transition-opacity duration-600 ${
             inView ? 'opacity-1' : 'opacity-0'
-          }`}>
-          Well, you have come to the right place! Whether it be designing,
-          building a website from scratch, or even updating an existing one, we
-          can help you out.
-        </p>
+          }`}
+            >
+              Well, you have come to the right place! Whether it be designing,
+              building a website from scratch, or even updating an existing one,
+              we would be happy to help.
+            </p>
+          )}
+        </InView>
         {/* <p className="w-3/5 text-white text-3xl font-bold">
           We know there are many different ways to build a website today, such
           as Shopify, Wordpress, Wix, Squarespace, you name it! No matter the
