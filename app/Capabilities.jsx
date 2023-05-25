@@ -15,19 +15,16 @@ export default function Capabilites() {
       <h1 className="text-white text-4xl font-bold w-screen text-center">
         Capabilities
       </h1>
-      <ul className="text-black text-2xl font-semibold">
+      <ul className="h-1/2 w-3/4 text-black text-xl font-semibold">
         <CapabilityItem />
         <li className={`${inView ? 'opacity-1' : 'opacity-0'} delay-100`}>
-          -Create Wireframe
+          -Design and Build Sites From Scratch
         </li>
         <li className={`${inView ? 'opacity-1' : 'opacity-0'} delay-200`}>
-          -Shopify
+          -Develop Web Applications
         </li>
         <li className={`${inView ? 'opacity-1' : 'opacity-0'} delay-400`}>
-          -Wordpress
-        </li>
-        <li className={`${inView ? 'opacity-1' : 'opacity-0'} delay-600`}>
-          -Build From Scratch
+          -Create Wordpress, Shopify, or Squarespace sites
         </li>
         <li className={`${inView ? 'opacity-1' : 'opacity-0'} delay-800`}>
           -Edit existing sites
