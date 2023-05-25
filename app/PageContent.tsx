@@ -2,9 +2,12 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { InView } from 'react-intersection-observer';
+import { InView, useInView } from 'react-intersection-observer';
+import TopQuote from './TopQuote';
+import BottomQuote from './BottomQuote';
+import Capabilities from './Capabilities'
 
-export default function Keyboard() {
+export default function PageContent() {
   const testerString = 'Where can I possibly find a web designer??';
   const testStringCount = ' Where can I possibly find a web designer??';
   const filledArr: any = [];
@@ -48,7 +51,7 @@ export default function Keyboard() {
   };
 
   return (
-    <div className={`bg-black w-screen`}>
+    <div className={`bg-black h-screen w-screen`}>
       <div className="flex flex-wrap h-full w-full bg-dots bg-no-repeat bg-center bg-cover md:bg-contain justify-center items-start">
         <div className="flex flex-wrap h-full w-full items-center justify-center">
           <h1 className="text-4xl text-center text-black font-bold">
@@ -56,43 +59,12 @@ export default function Keyboard() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-wrap h-3/4 w-full text-3xl md:text-5xl justify-center items-center">
-        <InView>
-          {({ inView, ref, entry }) => (
-            <p
-              ref={ref}
-              id="needWebsite"
-              className={`w-4/5 text-white font-bold 
-          transition-transform duration-600 ${
-            inView ? 'translate-x-0' : 'translate-x-12'
-          }
-          transition-opacity duration-600 ${
-            inView ? 'opacity-1' : 'opacity-0'
-          }`}
-            >
-              So, you&#39;re in need of a website?
-            </p>
-          )}
-        </InView>
-        <InView>
-          {({ inView, ref, entry }) => (
-            <p
-              ref={ref}
-              id="rightPlace"
-              className={`w-4/5 text-omo-yellow text-end font-bold ease-in-out
-        transition-transform duration-600 ${
-          inView ? 'translate-x-0' : '-translate-x-6'
-        }
-          transition-opacity duration-600 ${
-            inView ? 'opacity-1' : 'opacity-0'
-          }`}
-            >
-              Well, you have come to the right place! Whether it be designing,
-              building a website from scratch, or even updating an existing one,
-              we would be happy to help.
-            </p>
-          )}
-        </InView>
+      <div className="z-5 flex flex-wrap h-screen w-full text-3xl md:text-5xl justify-center items-center">
+        <TopQuote />
+        <BottomQuote />
+      </div>
+      <div className="flex flex-wrap w-full">
+        <Capabilities />
         {/* <p className="w-3/5 text-white text-3xl font-bold">
           We know there are many different ways to build a website today, such
           as Shopify, Wordpress, Wix, Squarespace, you name it! No matter the
