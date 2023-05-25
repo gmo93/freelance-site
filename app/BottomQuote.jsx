@@ -2,10 +2,10 @@ import { useInView } from 'react-intersection-observer';
 
 export default function TopQuote() {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: .5,
     delay: 300,
     triggerOnce: true,
-    rootMargin: '20px'
+    rootMargin: '40px'
   });
 
   return (
