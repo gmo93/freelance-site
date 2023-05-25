@@ -1,5 +1,4 @@
 import { useInView } from "react-intersection-observer";
-import CapabilityItem from "./CapabilityItem";
 import Image from "next/image";
 
 export default function Expertise() {
@@ -30,7 +29,7 @@ export default function Expertise() {
         <li>-Shopify</li>
       </ul>
       <div className="w-screen h-min flex justify-center">
-        <Image className='animate-rotate' src="/webIcon.svg" width={125} height={125} />
+        <Image alt = "Web Icon spinning for aesthetic" className='animate-rotate' src="/webIcon.svg" width={125} height={125} />
       </div>
     </div>
   );

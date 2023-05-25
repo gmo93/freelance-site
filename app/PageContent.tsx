@@ -54,9 +54,7 @@ export default function PageContent() {
     <div className={`bg-black h-screen w-screen`}>
       <div className="flex flex-wrap h-full w-full bg-dots bg-no-repeat bg-center bg-cover md:bg-contain justify-center items-start">
         <div className="flex flex-wrap h-full w-full items-center justify-center">
-          <h1 className="text-4xl text-center text-black font-bold">
-            Omohundro Web Design
-          </h1>
+          <Image alt = "Main Logo" src = "/littleShopLogo.png" height={400} width={400} priority/>
         </div>
       </div>
       <div className="z-5 flex flex-wrap h-screen w-full text-3xl md:text-5xl justify-center items-center">
