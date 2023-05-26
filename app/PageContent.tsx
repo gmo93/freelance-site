@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { InView, useInView } from "react-intersection-observer";
 import TopQuote from "./TopQuote";
 import BottomQuote from "./BottomQuote";
-import Capabilities from "./Expertise";
+import Expertise from "./Expertise";
 
 export default function PageContent() {
   const testerString = "Where can I possibly find a web designer??";
@@ -61,15 +61,8 @@ export default function PageContent() {
         <TopQuote />
         <BottomQuote />
       </div>
-      <div className="flex flex-wrap w-full">
-        <Capabilities />
-        {/* <p className="w-3/5 text-white text-3xl font-bold">
-          We know there are many different ways to build a website today, such
-          as Shopify, Wordpress, Wix, Squarespace, you name it! No matter the
-          builder, or lack there of, we can help you out! Fill out our form
-          below to let us know what you are looking for, and we will get back to
-          you as soon as possible!
-        </p> */}
+      <div className="h-min sm:h-screen flex flex-wrap w-full">
+        <Expertise />
       </div>
     </div>
   );
