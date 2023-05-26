@@ -27,6 +27,7 @@ export default function Expertise() {
         <li>-SEO</li>
         <li>-Wordpress Development</li>
         <li>-Shopify</li>
+        <li>-Home Page Animations</li>
       </ul>
       <div className="h-1/4 w-screen flex items-start justify-center p-10">
         <Image alt = "Web Icon spinning for aesthetic" className='animate-rotate' src="/webIcon.svg" width={100} height={100} />
