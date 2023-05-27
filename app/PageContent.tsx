@@ -6,6 +6,7 @@ import { InView, useInView } from "react-intersection-observer";
 import TopQuote from "./TopQuote";
 import BottomQuote from "./BottomQuote";
 import Expertise from "./Expertise";
+import GridTest from './GridTest'
 
 export default function PageContent() {
   const testerString = "Where can I possibly find a web designer??";
@@ -57,13 +58,18 @@ export default function PageContent() {
           <Image alt = "Main Logo" src = "/littleShopLogo.png" height={400} width={400} priority/>
         </div>
       </div>
-      <div className="z-5 flex flex-wrap h-screen w-full text-3xl md:text-5xl justify-center items-center">
+      <div className={`h-full flex items-center`}>
+      <div className="z-5 flex flex-wrap h-1/2 w-full text-3xl md:text-5xl justify-center items-center">
         <TopQuote />
         <BottomQuote />
       </div>
+    </div>
       <div className="h-min sm:h-screen flex flex-wrap w-full">
         <Expertise />
       </div>
+      {/* <div className="h-screen w-screen">
+        <GridTest />
+      </div> */}
     </div>
   );
 }

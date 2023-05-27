@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PageContent from "./PageContent";
 import { useEffect, useState } from "react";
-import Capabilities from "./Expertise";
+import GridTest from './GridTest'
 
 export default function Home() {
   return (
