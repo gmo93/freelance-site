@@ -10,8 +10,8 @@ export default function HomePage() {
         <Image
           alt="Main Logo"
           src="/littleShopLogo.svg"
-          height={400}
-          width={500}
+          height={300}
+          width={300}
           priority
         />
       </div>
