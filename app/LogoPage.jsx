@@ -3,10 +3,10 @@
 
 import Image from "next/image";
 
-export default function HomePage() {
+export default function LogoPage() {
   return (
     <div className="flex flex-wrap h-full w-full justify-center items-start">
-      <div className="flex flex-wrap h-full w-full items-center justify-center">
+      <div className="flex flex-wrap h-5/6 w-full items-center justify-center">
         <Image
           alt="Main Logo"
           src="/littleShopLogo.svg"

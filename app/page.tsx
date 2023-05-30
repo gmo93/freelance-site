@@ -1,17 +1,21 @@
 import Image from "next/image";
 import NavBar from "./NavBar";
-import HomePage from "./HomePage";
-import Expertise from './Expertise';
-import Quotes from './Quotes';
+import LogoPage from "./LogoPage";
+import Expertise from "./Expertise";
+import Quotes from "./Quotes";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden flex flex-wrap w-screen bg-omo-fifth">
       <div className="flex flex-wrap h-screen w-screen items-end">
-        <HomePage />
+        <LogoPage />
         <NavBar />
-        <Quotes />
-        <Expertise />
+        <div className="h-full">
+          <Quotes />
+        </div>
+        <div className="h-screen bg-omo-first">
+          <Expertise />
+        </div>
       </div>
     </main>
   );
