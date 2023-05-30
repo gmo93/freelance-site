@@ -6,7 +6,7 @@ import { InView, useInView } from "react-intersection-observer";
 import TopQuote from "./TopQuote";
 import BottomQuote from "./BottomQuote";
 import Expertise from "./Expertise";
-import GridTest from './GridTest'
+import Contact from './Contact'
 
 export default function PageContent() {
   const testerString = "Where can I possibly find a web designer??";
@@ -51,11 +51,16 @@ export default function PageContent() {
     console.log("hello");
   };
 
+  const mainLogo = {
+    animationName: 'spinLogo',
+    animationDuration: '2s'
+  }
+
   return (
-    <div className={`bg-black h-screen w-screen`}>
-      <div className="flex flex-wrap h-full w-full bg-dots bg-no-repeat bg-center bg-cover md:bg-contain justify-center items-start">
+    <div className={`bg-white h-screen w-screen`}>
+      <div className="flex flex-wrap h-full w-full justify-center items-start">
         <div className="flex flex-wrap h-full w-full items-center justify-center">
-          <Image alt = "Main Logo" src = "/littleShopLogo.png" height={400} width={400} priority/>
+          <Image alt = "Main Logo" src = "/littleShopBigDesign.svg" height={500} width={500} priority/>
         </div>
       </div>
       <div className={`h-full flex items-center`}>
@@ -67,9 +72,9 @@ export default function PageContent() {
       <div className="h-min sm:h-screen flex flex-wrap w-full">
         <Expertise />
       </div>
-      {/* <div className="h-screen w-screen">
-        <GridTest />
-      </div> */}
+      <div className="h-screen w-screen">
+        <Contact />
+      </div>
     </div>
   );
 }

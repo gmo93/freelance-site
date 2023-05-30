@@ -20,7 +20,7 @@ export default function Expertise() {
       <ul
         className={`${inView ? 'opacity-1' : 'opacity-0'} ${
           inView ? 'translate-x-0' : 'translate-x-12'
-        } duration-500 h-1/4 w-3/4 text-black text-2xl md:text-5xl font-light flex flex-wrap`}
+        } duration-500 h-1/4 w-3/4 text-black text-2xl md:text-4xl lg: text-5xl font-light flex flex-wrap`}
       >
         <li className={`w-full`}>-Branding</li>
         <li className={`w-full`}>-UX / UI Design</li>

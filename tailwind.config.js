@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         "omo-yellow": "#facc15",
+        "omo-pink": "#f8acae"
       },
       animation: {
         rotate: 'rotate 5s ease-in-out infinite',
@@ -27,5 +28,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
