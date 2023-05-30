@@ -1,14 +1,18 @@
 import Image from "next/image";
-import PageContent from "./PageContent";
-import { useEffect, useState } from "react";
-import GridTest from './GridTest'
-import NavBar from './NavBar'
+import NavBar from "./NavBar";
+import HomePage from "./HomePage";
+import Expertise from './Expertise';
+import Quotes from './Quotes';
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden flex flex-wrap w-screen bg-black">
-      <NavBar />
-      <PageContent />
+    <main className="overflow-x-hidden flex flex-wrap w-screen bg-omo-fifth">
+      <div className="flex flex-wrap h-screen w-screen items-end">
+        <HomePage />
+        <NavBar />
+        <Quotes />
+        <Expertise />
+      </div>
     </main>
   );
 }

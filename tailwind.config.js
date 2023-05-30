@@ -14,8 +14,11 @@ module.exports = {
         dots: 'url("/yellowDot.svg")',
       },
       colors: {
-        "omo-yellow": "#facc15",
-        "omo-pink": "#f8acae"
+        "omo-first": "#F4978E",
+        "omo-second": "#EF8080",
+        "omo-third": "#F8AD9D",
+        "omo-fourth": "#FBC4AB",
+        "omo-fifth": "#FFDAB9",
       },
       animation: {
         rotate: 'rotate 5s ease-in-out infinite',
@@ -27,6 +30,9 @@ module.exports = {
         }
       }
     },
+    fontFamily: {
+      'comp': ['Garamond']
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

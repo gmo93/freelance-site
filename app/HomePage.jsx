@@ -1,0 +1,22 @@
+"use client";
+
+
+import Image from "next/image";
+
+export default function HomePage() {
+  return (
+    <div className="flex flex-wrap h-full w-full justify-center items-start">
+      <div className="flex flex-wrap h-full w-full items-center justify-center">
+        <Image
+          alt="Main Logo"
+          src="/littleShopLogo.svg"
+          height={400}
+          width={500}
+          priority
+        />
+      </div>
+      <div className={`h-full flex items-center`}>
+    </div>
+    </div>
+  );
+}

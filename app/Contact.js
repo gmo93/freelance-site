@@ -5,10 +5,10 @@ export default function Contact() {
         <h1 className={`text-black text-4xl font-bold`}>Contact Us</h1>
       </div>
       <div className={`flex flex-wrap items-center justify-center`}>
-        <h1 className={`text-omo-yellow text-4xl font-bold`}>Contact Us</h1>
+        <h1 className={`text-omo-first text-4xl font-bold`}>Contact Us</h1>
       </div>
       <div className={`flex flex-wrap items-center justify-center`}>
-        <h1 className={`text-omo-yellow text-4xl font-bold`}>Contact Us</h1>
+        <h1 className={`text-omo-first text-4xl font-bold`}>Contact Us</h1>
       </div> */}
       <form className="text-black justify-center" action="/action_page.php">
         <label for="pswrd">Password:</label>

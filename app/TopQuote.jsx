@@ -14,7 +14,7 @@ export default function TopQuote() {
       id="needWebsite"
       className={`w-4/5 text-white font-light 
           transition-transform duration-500 ${
-            inView ? 'translate-y-0' : 'translate-y-24'
+            inView ? 'translate-y-0' : 'translate-x-24'
           }
           transition-opacity duration-1000 ${
             inView ? 'opacity-1' : 'opacity-0'
