@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Little Shop, Big Design",
     images: [
       {
-        url: '/littleShopBigDesignOGSmall.jpg',
+        url: '/littleShopOGSmall.jpg',
         width: 500,
         height: 500
       }
