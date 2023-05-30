@@ -25,6 +25,7 @@ export default function Expertise() {
           inView ? "translate-x-0" : "translate-x-12"
         } duration-500 h-1/6 w-3/4 text-omo-fifth text-xl md:text-4xl lg: text-5xl font-light flex flex-wrap`}
       >
+        <li className={`w-full text-xl md:text-4xl`}>-Web Development</li>
         <li className={`w-full text-xl md:text-4xl`}>-Branding</li>
         <li className={`w-full text-xl md:text-4xl`}>-UX / UI Design</li>
         <li className={`w-full text-xl md:text-4xl`}>-eCommerce</li>
