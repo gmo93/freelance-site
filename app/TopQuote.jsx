@@ -12,7 +12,7 @@ export default function TopQuote() {
     <p
       ref={ref}
       id="needWebsite"
-      className={`w-4/5 text-omo-third font-light 
+      className={`w-4/5 text-white font-light 
           transition-transform duration-500 ${
             inView ? 'translate-y-0' : 'translate-x-24'
           }

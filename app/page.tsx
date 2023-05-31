@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import LogoPage from "./LogoPage";
 import Expertise from "./Expertise";
 import Quotes from "./Quotes";
+import Contact from './Contact'
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         </div>
         <div className="h-screen bg-omo-first">
           <Expertise />
+        </div>
+        <div className="h-full">
+          <Contact />
         </div>
       </div>
     </main>
