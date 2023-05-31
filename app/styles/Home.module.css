@@ -35,3 +35,15 @@
   stroke: #231f20;
   stroke-miterlimit: 10;
 }
+#homeButton {
+  animation: homeLoad 1s forwards;
+}
+
+@keyframes homeLoad {
+  0% {
+    transform: scaleY(0)
+  }
+  100% {
+
+  }
+}
