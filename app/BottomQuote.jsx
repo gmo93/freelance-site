@@ -12,7 +12,7 @@ export default function TopQuote() {
     <p
       ref={ref}
       id="rightPlace"
-      className={`w-4/5 text-omo-first text-end font-light
+      className={`w-4/5 text-omo-second text-end font-light
         transition-transform duration-500 ${
           inView ? "translate-x-0" : "-translate-x-24"
         }
