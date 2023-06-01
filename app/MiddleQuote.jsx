@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 
-export default function BottomQuote() {
+export default function MiddleQuote() {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
     delay: 300,
@@ -12,7 +12,7 @@ export default function BottomQuote() {
     <p
       ref={ref}
       id="rightPlace"
-      className={`w-4/5 text-white text-start font-light
+      className={`w-4/5 text-omo-second text-end font-light
         transition-transform duration-500 ${
           inView ? "translate-x-0" : "-translate-x-24"
         }
@@ -20,7 +20,9 @@ export default function BottomQuote() {
             inView ? "opacity-1" : "opacity-0"
           }`}
     >
-      Here at "Little Shop, Big Design" our focus is giving small businesses and shops the same branding and web design opportunities that the big businesses have because why should they have all the fun??
+      Well, you have come to the right place! Whether it be designing, building
+      a website from scratch, or even updating an existing one, we would be
+      happy to help.
     </p>
   );
 }

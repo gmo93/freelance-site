@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import NavBar from './NavBar';
 import LogoPage from './LogoPage';
-import Expertise from './Expertise';
+import Services from './services/page';
 import Quotes from './Quotes';
 import Contact from './Contact';
 
@@ -16,9 +16,9 @@ export default function Home() {
         <div className="h-full">
           <Quotes />
         </div>
-        <div className="h-screen bg-omo-fifth">
-          <Expertise />
-        </div>
+        {/* <div className="h-screen bg-omo-fifth">
+          <Services />
+        </div> */}
         <div className="h-screen bg-white">
           <Contact />
         </div>

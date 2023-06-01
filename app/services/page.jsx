@@ -1,10 +1,11 @@
 "use client";
 
+import NavBar from '../NavBar'
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import {useState} from 'react';
 
-export default function Expertise() {
+export default function Services() {
   const { ref, inView, entry } = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -15,7 +16,7 @@ export default function Expertise() {
   if (count < expArray.length) {
     setTimeout(() => {
       setCount(count + 1);
-    }, 1000)
+    }, 750)
   } else {
     setCount(0)
   }
@@ -23,8 +24,9 @@ export default function Expertise() {
   return (
     <div
       ref={ref}
-      className={`bg-omo-second h-full w-screen flex flex-wrap justify-center md:justify-center items-center pt-10`}
+      className={`bg-omo-second h-screen w-screen flex flex-wrap justify-center md:justify-center items-center pt-10`}
     >
+      <NavBar />
       <div className={`flex flex-wrap items-center`}>
         <h1 className="text-omo-fifth text-4xl md:text-6xl font-medium w-screen md:h-1/4 text-center">
           Our Expertise
@@ -108,7 +110,7 @@ export default function Expertise() {
           </li>
         </ul>
       </div>
-      <div className="h-1/4 w-screen flex items-center justify-center">
+      <div className="h-1/4 w-screen flex items-start md:items-center justify-center">
         <Image
           alt="Web Icon spinning for aesthetic"
           className="animate-rotate"
