@@ -4,7 +4,7 @@ export default function Contact() {
       <div className={`h-2/3 w-4/5 flex flex-wrap justify-center items-center`}>
         <form action="/send-data-here" method="post">
           <div className={`firstName text-omo-second m-10`}>
-            <label className={`w-screen`} for="first">Email:</label>
+            <label className={`w-screen`} for="first">Name:</label>
             <input className={`m-2 w-5/6`} type="text" id="first" name="first" />
           </div>
           <div className={`lastName text-omo-second m-10`}>
@@ -12,7 +12,7 @@ export default function Contact() {
             <input className={`m-2 w-5/6`} type="text" id="last" name="last" />
           </div>
           <div className={`lastName text-omo-second m-10`}>
-            <label for="last">Business Name:</label>
+            <label for="last">Email:</label>
             <input className={`m-2 w-5/6`} type="text" id="last" name="last" />
           </div>
           <div className={`w-full flex flex-wrap justify-center`}>
