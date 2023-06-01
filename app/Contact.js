@@ -1,9 +1,28 @@
 export default function Contact() {
   return (
-    <div className={`h-5/6 w-screen`}>
-      <div className={`h-1/6 flex items-center justify-center`}>
-        <h1 className={`flex flex-wrap text-4xl text-white justify-center`}>
-          Lets Connect!
+    <div id="contact" className={`h-screen w-screen bg-omo-fifth flex flex-wrap justify-center`}>
+      <div className={`h-2/3 w-5/6 flex flex-wrap justify-center items-center`}>
+        <form action="/send-data-here" method="post">
+          <div className={`firstName text-omo-second m-10`}>
+            <label className={`w-full`} for="first">Email:</label>
+            <input className={`m-2`} type="text" id="first" name="first" />
+          </div>
+          <div className={`lastName text-omo-second m-10`}>
+            <label for="last">Business Name:</label>
+            <input className={`m-2`} type="text" id="last" name="last" />
+          </div>
+          <div className={`lastName text-omo-second m-10`}>
+            <label for="last">Business Name:</label>
+            <input className={`m-2`} type="text" id="last" name="last" />
+          </div>
+          <div className={`w-full flex flex-wrap justify-center`}>
+          <button className={`bg-omo-first text-white p-2 rounded-md`} type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div className={`h-1/3 flex justify-end items-center px-10`}>
+        <h1 className={`flex flex-wrap text-4xl text-semibold text-omo-first`}>
+          LETS CONNECT!
         </h1>
       </div>
     </div>

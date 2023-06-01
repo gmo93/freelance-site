@@ -22,7 +22,7 @@ module.exports = {
       },
       animation: {
         rotate: 'rotate 5s ease-in-out infinite',
-        loadIn: 'loadIn 1s ease-in',
+        loadIn: 'loadIn 1.5s ease-in',
       },
       keyframes: {
         rotate: {

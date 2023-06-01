@@ -12,10 +12,10 @@ export default function Expertise() {
   return (
     <div
       ref={ref}
-      className={`h-5/6 w-screen flex flex-wrap bg-omo-first justify-center md:justify-center items-center pt-10`}
+      className={`bg-omo-second h-full w-screen flex flex-wrap justify-center md:justify-center items-center pt-10`}
     >
       <div className={`flex flex-wrap items-center`}>
-        <h1 className="text-white text-4xl md:text-6xl font-medium w-screen md:h-1/4 text-center">
+        <h1 className="text-omo-fifth text-4xl md:text-6xl font-medium w-screen md:h-1/4 text-center">
           Our Expertise
         </h1>
       </div>
@@ -23,7 +23,7 @@ export default function Expertise() {
         <ul
           className={`${inView ? "opacity-1" : "opacity-0"} ${
             inView ? "translate-x-0" : "translate-x-12"
-          } duration-500 w-3/4 text-omo-fifth text-xl md:text-4xl lg: text-5xl font-light flex flex-wrap`}
+          } duration-500 w-3/4 text-white text-xl md:text-4xl lg: text-5xl font-light flex flex-wrap text-omo-fourth`}
         >
           <li className={`w-full text-xl md:text-4xl`}>-Web Development</li>
           <li className={`w-full text-xl md:text-4xl`}>-Branding</li>
@@ -41,7 +41,7 @@ export default function Expertise() {
         <Image
           alt="Web Icon spinning for aesthetic"
           className="animate-rotate"
-          src="/webIcon.svg"
+          src="/lightBulbIcon.svg"
           width={75}
           height={75}
         />
