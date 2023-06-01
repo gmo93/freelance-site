@@ -4,12 +4,13 @@
   <defs>
     <style>
       .cls-1 {
-        font-family: SourceCodePro-Regular, 'Source Code Pro';
+        font-family: Sans-Serif;
         font-size: 30px;
       }
 
       .cls-1, .cls-2 {
         fill: #FFDAB9;
+        animation: dash 4s linear forwards, filler 2s forwards 3s;
       }
 
       .cls-2 {
@@ -41,7 +42,7 @@
     </style>
   </defs>
   <g id="Layer_2-2" data-name="Layer 2">
-    <text class="cls-1" transform="translate(174.58 24.9)"><tspan x="0" y="0">WHERE WE TURN BIG DREAMS</tspan><tspan x="108" y="36">INTO REALITY</tspan></text>
+    <text class="cls-1" transform="translate(174.58 24.9)"><tspan x="0" y="0">Turning Your Little Shops</tspan><tspan x="108" y="36">Dreams Into Reality</tspan></text>
   </g>
   <g id="Layer_1-2" data-name="Layer 1">
     <g>
