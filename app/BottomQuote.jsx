@@ -20,7 +20,7 @@ export default function BottomQuote() {
             inView ? "opacity-1" : "opacity-0"
           }`}
     >
-      Here at "Little Shop, Big Design" our focus is giving small businesses and shops the same branding and web design opportunities that the big businesses have because why should they have all the fun??
+      Here at &quot;Little Shop, Big Design&quot; our focus is giving small businesses and shops the same branding and web design opportunities that the big businesses have because why should they have all the fun??
     </p>
   );
 }
