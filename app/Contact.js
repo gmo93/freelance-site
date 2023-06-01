@@ -4,16 +4,16 @@ export default function Contact() {
       <div className={`h-2/3 w-4/5 flex flex-wrap justify-center items-center`}>
         <form action="/send-data-here" method="post">
           <div className={`firstName text-omo-second m-10`}>
-            <label className={`w-full`} for="first">Email:</label>
-            <input className={`m-2`} type="text" id="first" name="first" />
+            <label className={`w-screen`} for="first">Email:</label>
+            <input className={`m-2 w-5/6`} type="text" id="first" name="first" />
           </div>
           <div className={`lastName text-omo-second m-10`}>
             <label for="last">Business Name:</label>
-            <input className={`m-2`} type="text" id="last" name="last" />
+            <input className={`m-2 w-5/6`} type="text" id="last" name="last" />
           </div>
           <div className={`lastName text-omo-second m-10`}>
             <label for="last">Business Name:</label>
-            <input className={`m-2`} type="text" id="last" name="last" />
+            <input className={`m-2 w-5/6`} type="text" id="last" name="last" />
           </div>
           <div className={`w-full flex flex-wrap justify-center`}>
           <button className={`bg-omo-first text-white p-2 rounded-md`} type="submit">Submit</button>
