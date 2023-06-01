@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div id="contact" className={`h-screen w-screen bg-omo-fifth flex flex-wrap justify-center`}>
-      <div className={`h-2/3 w-5/6 flex flex-wrap justify-center items-center`}>
+      <div className={`h-2/3 w-4/5 flex flex-wrap justify-center items-center`}>
         <form action="/send-data-here" method="post">
           <div className={`firstName text-omo-second m-10`}>
             <label className={`w-full`} for="first">Email:</label>
