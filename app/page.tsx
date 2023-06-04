@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 import LogoPage from './LogoPage';
 import Services from './services/page';
 import Quotes from './Quotes';
-import Contact from './Contact';
+import ContactForm from './Contact.jsx';
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           <Services />
         </div> */}
         <div className="h-screen bg-white">
-          <Contact />
+          <ContactForm />
         </div>
       </div>
     </main>
