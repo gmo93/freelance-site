@@ -47,7 +47,7 @@ export default function Services() {
         <div
           className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
         >
-          <Image height={100} width={100} src="/findMyMarketsLogo.svg" />
+          <Image alt="fmm logo" height={100} width={100} src="/findMyMarketsLogo.svg" />
           <h1 className={`w-full text-center text-white font-bold my-4`}>
             Find My Markets
           </h1>
@@ -59,14 +59,14 @@ export default function Services() {
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
             then React and Javascript to style / function the application. If
-            you have any questions, let me know and I'll gladly walk you through
+            you have any questions, let me know and I&apos;ll gladly walk you through
             the site!
           </p>
         </div>
         <div
           className={`border-b-4 h-full flex flex-wrap justify-center items-center`}
         >
-          <Image
+          <Image alt="fmm logo"
             className={`mt-24`}
             height={100}
             width={100}
@@ -83,14 +83,14 @@ export default function Services() {
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
             then React and Javascript to style / function the application. If
-            you have any questions, let me know and I'll gladly walk you through
+            you have any questions, let me know and I&apos;ll gladly walk you through
             the site!
           </p>
         </div>
         <div
           className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
         >
-          <Image height={100} width={100} src="/findMyMarketsLogo.svg" />
+          <Image alt="fmm logo" height={100} width={100} src="/findMyMarketsLogo.svg" />
           <h1 className={`w-full text-center text-white font-bold my-4`}>
             Find My Markets
           </h1>
@@ -102,14 +102,14 @@ export default function Services() {
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
             then React and Javascript to style / function the application. If
-            you have any questions, let me know and I'll gladly walk you through
+            you have any questions, let me know and I&apos;ll gladly walk you through
             the site!
           </p>
         </div>
         <div
           className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
         >
-          <Image height={100} width={100} src="/findMyMarketsLogo.svg" />
+          <Image alt="fmm logo" height={100} width={100} src="/findMyMarketsLogo.svg" />
           <h1 className={`w-full text-center text-white font-bold my-4`}>
             Find My Markets
           </h1>
@@ -121,7 +121,7 @@ export default function Services() {
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
             then React and Javascript to style / function the application. If
-            you have any questions, let me know and I'll gladly walk you through
+            you have any questions, let me know and I&apos;ll gladly walk you through
             the site!
           </p>
         </div>
