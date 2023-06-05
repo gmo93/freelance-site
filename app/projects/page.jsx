@@ -40,7 +40,10 @@ export default function Services() {
       className={`bg-omo-first h-full w-screen flex flex-wrap justify-center md:justify-center items-start pt-10`}
     >
       <NavBar />
-      <div onClick={eventLog} className={`grid grid-cols-1 h-full flex justify-center items-start`}>
+      <div
+        onClick={eventLog}
+        className={`grid grid-cols-1 h-full flex justify-center items-start`}
+      >
         <div
           className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
         >
@@ -61,16 +64,21 @@ export default function Services() {
           </p>
         </div>
         <div
-          className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
+          className={`border-b-4 h-full flex flex-wrap justify-center items-center`}
         >
-          <Image height={100} width={100} src="/findMyMarketsLogo.svg" />
+          <Image
+            className={`mt-24`}
+            height={100}
+            width={100}
+            src="/findMyMarketsLogo.svg"
+          />
           <h1 className={`w-full text-center text-white font-bold my-4`}>
             Find My Markets
           </h1>
           <h2 className={`w-3/5 text-omo-fifth`}>
             Your go-to site for craft markets and fairs coming up near you.
           </h2>
-          <p className={`w-3/4 my-4 text-white`}>
+          <p className={`w-3/4 my-4 text-white mb-14`}>
             Find My Markets is a web application I created to put all of the
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
@@ -89,7 +97,7 @@ export default function Services() {
           <h2 className={`w-3/5 text-omo-fifth`}>
             Your go-to site for craft markets and fairs coming up near you.
           </h2>
-          <p className={`w-3/4 my-4 text-white`}>
+          <p className={`w-3/4 my-4 text-white mb-14`}>
             Find My Markets is a web application I created to put all of the
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
@@ -99,7 +107,7 @@ export default function Services() {
           </p>
         </div>
         <div
-          className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20 mb-20`}
+          className={`border-b-4 h-full flex flex-wrap justify-center items-center mt-20`}
         >
           <Image height={100} width={100} src="/findMyMarketsLogo.svg" />
           <h1 className={`w-full text-center text-white font-bold my-4`}>
@@ -108,7 +116,7 @@ export default function Services() {
           <h2 className={`w-3/5 text-omo-fifth`}>
             Your go-to site for craft markets and fairs coming up near you.
           </h2>
-          <p className={`w-3/4 my-4 text-white`}>
+          <p className={`w-3/4 my-4 text-white mb-20`}>
             Find My Markets is a web application I created to put all of the
             craft markets coming up in the US in one place. I use puppeteer and
             NextJS to collect the info, MongoDB to store / access the Data, and
