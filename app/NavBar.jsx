@@ -10,7 +10,7 @@ export default function NavBar() {
       <a href="/#contact">
         <h4 className={`mx-2 animate-loadIn`}>CONTACT</h4>
       </a>
-      <a href="/projects">
+      <a href="/webprojects">
         <h4 className={`mx-2 animate-loadIn`}>PROJECTS</h4>
       </a>
     </div>
