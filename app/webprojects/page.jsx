@@ -51,26 +51,26 @@ export default function Services() {
         className={`grid grid-cols-2 md:grid-cols-3 w-screen h-5/6 flex justify-center items-center`}
       >
         <div className={`flex flex-wrap justify-center h-2/3 mb-40 mx-10`}>
-          <Image src="/fmmWhiteLogo.svg" height={300} width={300} />
+          <Image alt="fmm logo" src="/fmmWhiteLogo.svg" height={300} width={300} />
         </div>
         <div
           className={`flex flex-wrap h-2/3 items-center justify-center mb-40 mx-10`}
         >
-          <Image src="/omoPhotosWhiteLogo.svg" height={300} width={300} />
+          <Image alt = "omoPhotos Logo" src="/omoPhotosWhiteLogo.svg" height={300} width={300} />
         </div>
         <div className={`flex flex-wrap justify-center h-2/3 mb-40 mx-10`}>
-          <Image src="/wftkWhiteFullLogo.svg" height={300} width={300} />
+          <Image alt = "wftk Logo" src="/wftkWhiteFullLogo.svg" height={300} width={300} />
         </div>
         <div className={`flex flex-wrap justify-center h-2/3 mb-40 mx-10`}>
-          <Image src="/fmmWhiteLogo.svg" height={300} width={300} />
+          <Image alt = "fmmLogo" src="/fmmWhiteLogo.svg" height={300} width={300} />
         </div>
         <div
           className={`flex flex-wrap h-2/3 items-center justify-center mb-40 mx-10`}
         >
-          <Image src="/omoPhotosWhiteLogo.svg" height={300} width={300} />
+          <Image alt = "omoPhotos Logo" src="/omoPhotosWhiteLogo.svg" height={300} width={300} />
         </div>
         <div className={`flex flex-wrap justify-center h-2/3 mb-40 mx-10`}>
-          <Image src="/wftkWhiteFullLogo.svg" height={300} width={300} />
+          <Image alt = "wftkLogo" src="/wftkWhiteFullLogo.svg" height={300} width={300} />
         </div>
       </div>
     </div>
