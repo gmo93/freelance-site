@@ -53,12 +53,14 @@ export default function Services() {
         <div
           className={`flex flex-wrap justify-center h-2/3 mb-40 mx-10 items-center`}
         >
+          <a href = "/findmymarkets">
           <Image
             alt="fmm logo"
             src="/fmmWhiteLogo.svg"
             height={300}
             width={300}
           />
+          </a>
         </div>
         <div
           className={`flex flex-wrap h-2/3 items-center justify-center mb-40 mx-10`}
